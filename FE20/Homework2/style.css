@@ -1,0 +1,67 @@
+blockquote {
+    margin: 0;
+    width: 30%;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D  — Конфуций.';
+}
+
+blockquote p {
+    color: green;
+}
+
+a[href^="https"] {
+    color: red;
+}
+
+.holder>ul>li:last-child {
+    background-color: blue;
+}
+
+ul+p {
+    font-size: 26px;
+}
+
+.text-box h3:first-child {
+    color: pink;
+}
+
+#greycol {
+    color: grey;
+}
+
+.text-box div p:first-child {
+    color: red;
+}
+
+.text-box>p:nth-of-type(3) {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.bg-box {
+    height: 500px;
+    width: 700px;
+    background:
+        url("images/grass.png") 450px 320px repeat-x,
+        url("images/lamp.png") 0 0 repeat-x,
+        url("images/ezhik.png") 0 0 repeat-y,
+        url("images/ponchik.png") 675px 450px repeat-y,
+        url("images/dom.jpg") center no-repeat,
+        green;
+    background-size: 150px 180px, 25px 50px, 25px 25px, 25px 25px, 400px 250px;
+}
