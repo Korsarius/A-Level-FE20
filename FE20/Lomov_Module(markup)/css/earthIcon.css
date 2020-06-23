@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/earthIcons/icomoon.eot?s290qe');
+  src: url('../fonts/earthIcons/icomoon.eot?s290qe#iefix') format('embedded-opentype'),
+    url('../fonts/earthIcons/icomoon.ttf?s290qe') format('truetype'),
+    url('../fonts/earthIcons/icomoon.woff?s290qe') format('woff'),
+    url('../fonts/earthIcons/icomoon.svg?s290qe#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-earth1:before {
+  content: "\e9ca";
+}

@@ -1,0 +1,1028 @@
+@font-face {
+    font-family: 'FREESCPT';
+    src: url('../fonts/FREESCPT.eot');
+    src: url('../fonts/FREESCPT.eot') format('embedded-opentype'),
+        url('../fonts/FREESCPT.woff2') format('woff2'),
+        url('../fonts/FREESCPT.woff') format('woff'),
+        url('../fonts/FREESCPT.ttf') format('truetype'),
+        url('../fonts/FREESCPT.svg#FREESCPT') format('svg');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+
+.tariff button:hover,
+.form input[type="submit"]:last-child:hover {
+    color: #5b6ceb;
+    background: white;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #5363db;
+    font-weight: bold;
+}
+
+.form h3 {
+    font-size: 26px;
+    color: #5363db;
+    padding: 30px 0 20px 0;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #777777;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 41px;
+    line-height: 1.2;
+    font-family: 'FREESCPT', 'Arial', 'Helvetica Neue', 'Helvetica';
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 15px 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registrationForm {
+    background-image: url(../images/bg-01.jpg);
+    object-fit: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+.registrationForm:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(75, 91, 211, 0.8);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.registration {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.registrationItem1,
+.registrationItem2 {
+    width: 50%;
+}
+
+.registrationItem1 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+
+.formWrapper {
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.form input {
+    background-color: #f2f2f2;
+    width: 240px;
+    height: auto;
+    border: 1px solid #f2f2f2;
+    border-radius: 7px;
+    padding: 15px 0 15px 10px;
+    margin-bottom: 15px;
+}
+
+.form input[type="submit"]:last-child {
+    background-color: #5b6ceb;
+    color: white;
+    margin: 10px 0 25px 0;
+    max-width: 170px;
+    align-self: flex-end;
+}
+
+.form input[type="submit"] {
+    border: 1px solid #5b6ceb;
+}
+
+.form select {
+    background-color: #f2f2f2;
+    max-width: 240px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 15px 0 15px 10px;
+    margin-bottom: 15px;
+    color: #888888;
+}
+
+.losung h1 {
+    max-width: 485px;
+}
+
+.losung span {
+    max-width: 270px;
+}
+
+.losung span {
+    font-family: 'FREESCPT', 'Arial', 'Helvetica Neue', 'Helvetica';
+    font-size: 40px;
+    line-height: 1.2;
+    color: white;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+/*------------------------------------------------------ Start of Yoga Program (grid) -----------------------------------------------------*/
+
+.yogaPrograms {
+    margin-top: 125px;
+}
+
+.programsHeader {
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.programsGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.programsItem {
+    width: calc(50% - 30px);
+    background: white;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 25px;
+    margin-right: 30px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.programsItem:hover {
+    transform: translateY(-15px);
+}
+
+.programImages {
+    width: 50%;
+}
+
+.programImages img {
+    height: 100%;
+    object-fit: fill;
+}
+
+.programInfo {
+    width: 50%;
+    padding: 0 30px 0 30px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.programInfo p:nth-child(2) {
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.programInfo span {
+    font-size: 12px;
+    color: #999999;
+}
+
+/*------------------------------------------------------ End of Yoga Program (grid) ------------------------------------------------------*/
+
+/*------------------------------------------------------ Start of Image Grid (8 photos) --------------------------------------------------*/
+.imageGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 190px;
+    margin-bottom: 175px;
+}
+
+.gridItem {
+    width: 25%;
+    max-height: 300px;
+    position: relative;
+}
+
+.gridItem img {
+    height: 100%;
+}
+
+.gridItem:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background: rgba(75, 91, 211, 0.6);
+    pointer-events: none;
+}
+
+.gridItem:before {
+    content: "\e986";
+    font-family: 'icomoon' !important;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.gridItem:hover::before,
+.gridItem:hover::after {
+    opacity: 1;
+}
+
+/*------------------------------------------------------ End of Image Grid (8 photos) ----------------------------------------------------*/
+
+/*------------------------------------------------------ Start of About Us Info (slider) -------------------------------------------------*/
+
+.aboutUs {
+    display: flex;
+}
+
+.aboutUsItem1,
+.aboutUsItem2 {
+    width: 50%;
+}
+
+.aboutUsItem1 p:nth-child(2) {
+    line-height: 1.5;
+    margin-top: 25px;
+    max-width: 470px;
+}
+
+.aboutUsItem2 {
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #5363db;
+    font-family: 'icomoon' !important;
+    font-size: 40px;
+}
+
+.slick-prev::before {
+    content: "\ea44";
+}
+
+.slick-next::before {
+    content: "\ea42";
+}
+
+.slick-prev {
+    left: -10px;
+    z-index: 100;
+}
+
+.slick-next {
+    right: 10px;
+    z-index: 100;
+}
+
+.aboutUsItem2 {
+    max-width: 570px;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.aboutUsItem2 img {
+    max-width: 570px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*------------------------------------------------------ End of About Us Info (slider) ---------------------------------------------------*/
+
+.yogaBenefits {
+    background: url(../images/bg-02.jpg);
+    object-fit: cover;
+    background-position: 50% 50%;
+    position: relative;
+    margin-top: 175px;
+}
+
+.yogaBenefits:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(75, 91, 211, 0.8);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.gridBenefits {
+    padding: 95px 0 105px;
+    display: flex;
+    color: white;
+    font-size: 13px;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.itemBenefit {
+    width: calc(25% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    z-index: 2;
+}
+
+.imageHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.itemBenefit h6 {
+    max-width: 180px;
+    margin-bottom: 25px;
+}
+
+/*------------------------------------------------------ Start of Yoga Tariffs (buy now) --------------------------------------------------*/
+.buyNow {
+    background-image: url(/images/bg-03.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    object-fit: cover;
+}
+
+.tariffs {
+    padding: 100px 0;
+    display: flex;
+}
+
+.tariff {
+    width: calc(33.3%);
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.tariffHeader {
+    padding: 35px 0;
+    background-color: #5b6ceb;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.tariffHeader>p {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tariffHeader>p>span::before {
+    content: '$';
+    font-size: 32px;
+    position: absolute;
+    top: 30%;
+    right: 70%;
+    padding-right: 25px;
+}
+
+.tariffBody {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.tariff p>span {
+    font-size: 68px;
+    font-weight: bold;
+}
+
+.tariff ul {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.tariff ul hr {
+    border: none;
+    background-color: #d7d7d7;
+    height: 1px;
+    width: 100px;
+    color: #d7d7d7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.tariff button {
+    background-color: #5b6ceb;
+    color: white;
+    border: 1px solid #5b6ceb;
+    border-radius: 20px;
+    padding: 15px 0;
+    min-width: 170px;
+    margin-bottom: 50px;
+    align-self: center;
+}
+
+/*------------------------------------------------------ End of Yoga Tariffs (buy now) --------------------------------------------------*/
+
+/*------------------------------------------------------ FOOTER (start) -----------------------------------------------------------------*/
+
+.footer {
+    color: white;
+}
+
+.footerMainBackground {
+    background-color: #5b6ceb;
+}
+
+.footerMain {
+    display: flex;
+}
+
+.footerItem1,
+.footerItem2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.footerMain h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+
+.icons {
+    display: flex;
+}
+
+.footerItem1 .icons {
+    padding-top: 70px;
+}
+
+.footerItem1 p:nth-child(2) {
+    max-width: 460px;
+}
+
+.footerItem2 h3 {
+    padding-left: 17px;
+}
+
+.footerItem2 .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footerItem2 i {
+    padding-right: 15px;
+}
+
+.footerItem2 a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.footerItem2 a:hover {
+    text-decoration: underline;
+}
+
+.footerItem2 ul li:nth-child(1) {
+    max-width: 215px;
+}
+
+.footerItem2 ul li:nth-child(3) {
+    max-width: 150px;
+}
+
+.footerItem2 ul li:nth-child(4) {
+    padding-right: 33px;
+}
+
+.icons li {
+    padding: 30px 0 0 15px;
+}
+
+.icons li ul li {
+    padding: 0;
+}
+
+.icons li:first-child a>span {
+    display: inline-block;
+    padding-right: 29px;
+}
+
+.icons li ul li:first-child::before {
+    content: "\e942";
+    font-family: 'icomoon' !important;
+    padding-right: 15px;
+}
+
+.icons li ul li:nth-child(2) {
+    padding-left: 29px;
+}
+
+.footerItem1 .icons a {
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.footerItem1 .icons a:hover {
+    display: inline-block;
+    transform: scale(1.5);
+}
+
+.footerBottom {
+    background-color: #5363d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    padding: 30px 15px 30px;
+    color: #a6aff5;
+}
+
+/*------------------------------------------------------ FOOTER (End) -------------------------------------------------------------------*/
+
+/* ----------------------------------------------------- Burger Menu ------------------------------------------------------------------- */
+
+.menu__icon {
+    display: none;
+}
+
+.menu__links {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.menu__links>li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    margin-left: 15px;
+}
+
+.menu__links>li>a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888888;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.menu__links>li>a:active {
+    color: #5363db;
+    border-bottom: 1px solid #5363db;
+}
+
+.menu__links>li>a:hover {
+    color: #5363db;
+    border-bottom: 1px solid #5363db;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px;
+    }
+
+    .menu__icon {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .menu__icon:hover {
+        color: #f00;
+    }
+
+    .menu__links {
+        position: absolute;
+        z-index: 100;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s linear;
+        background: white;
+        color: #000;
+        right: 0%;
+    }
+
+    .menu__links a {
+        color: inherit;
+        display: block;
+        padding: 5px;
+    }
+
+    .menu__links a:hover {
+        color: #f00;
+        text-decoration: none;
+    }
+
+    .menu.menu_state_open .menu__links {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.class1 .menu {
+    display: none;
+}
+
+.class1.class2 .menu {
+    display: block;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RESPONSIVE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (max-width: 900px) {
+    .programsGrid {
+        justify-content: space-between;
+    }
+
+    .programsItem {
+        margin-right: 0;
+    }
+
+    .gridItem {
+        width: 50%;
+    }
+
+    .gridItem img {
+        width: 100%;
+    }
+
+    .tariff {
+        padding: 5px;
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 870px) {
+    .programsItem {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .icons li {
+        padding: 10px 0 0 5px;
+    }
+}
+
+@media (max-width: 830px) {
+    .tariffHeader p span {
+        font-size: 46px;
+    }
+
+    .tariffHeader>p>span::before {
+        font-size: 26px;
+        top: 15%;
+        padding-right: 15px;
+        right: 73%;
+    }
+
+    .footerItem2 {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .registrationItem1 {
+        padding-right: 50px;
+    }
+
+    .registrationItem2 h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 725px) {
+    .aboutUs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutUsItem1,
+    .aboutUsItem2 {
+        width: calc(100% - 30px);
+    }
+
+    .aboutUsItem1 {
+        padding-bottom: 40px;
+    }
+
+    .tariffs {
+        flex-wrap: wrap;
+    }
+
+    .tariff {
+        width: calc(75% - 100px);
+        margin: 0 auto;
+    }
+
+    .tariffHeader>p>span::before {
+        right: 63%;
+    }
+}
+
+@media (max-width: 678px) {
+    .formWrapper {
+        margin: 40px 0;
+    }
+
+    .registration {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 65px;
+    }
+
+    .registrationItem1,
+    .registrationItem2 {
+        width: 100%;
+        display: flex;
+        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .registrationItem2 {
+        text-align: center;
+    }
+
+    .yogaPrograms {
+        margin-top: 40px;
+    }
+
+    .programsHeader {
+        margin-bottom: 30px;
+    }
+
+    .programInfo h4 {
+        margin-top: 35px;
+        font-size: 16px;
+    }
+
+    .imageGrid {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .gridBenefits {
+        padding: 50px 0;
+    }
+
+    .yogaBenefits {
+        margin-top: 50px;
+    }
+
+    .itemBenefit {
+        width: calc(50% - 30px);
+    }
+
+    .tariffs {
+        padding: 35px 0 25px;
+    }
+
+    .footerItem1,
+    .footerItem2 {
+        padding: 35px 0;
+    }
+
+    .footerMain h3 {
+        padding-bottom: 40px;
+    }
+
+    .footerItem1 .icons {
+        padding-top: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tariffHeader>p>span::before {
+        right: 70%;
+    }
+
+    .footerItem1,
+    .footerItem2 {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .tariff {
+        width: calc(100% - 30px);
+        padding: 15px 0;
+    }
+
+    .tariffHeader>p>span::before {
+        right: 63%;
+    }
+
+    .footerMain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerMain h3 {
+        padding-bottom: 25px;
+    }
+
+    .footerItem1,
+    .footerItem2 {
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    .footerItem2 {
+        padding: 0 0 25px 0;
+    }
+
+    .footerItem1 .icons {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 470px) {
+    .programsItem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .programImages {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .programImages img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .programInfo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .itemBenefit {
+        width: calc(100% - 30px);
+    }
+
+    .tariffHeader p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .aboutUsItem1 p:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .footerItem1 p {
+        font-size: 12px;
+    }
+
+    .programInfo p:nth-child(2) {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .tariffHeader>p>span::before {
+        right: 67%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .programsHeader h2 {
+        width: 180px;
+    }
+
+    .programsHeader h2,
+    .programsHeader h5 {
+        text-align: center;
+    }
+}
