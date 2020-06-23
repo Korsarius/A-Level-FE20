@@ -1,0 +1,41 @@
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* #formContainer {
+    display: flex;
+    flex-direction: column;
+} */
+
+#formContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+  /* align-self: flex-start; */
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+}
+
+#chatHistory {
+  position: absolute;
+  top: 1px;
+  width: 600px;
+  background-color: white;
+}
+
+#emojiList {
+  background-color: white;
+}
+
+#chatHistory p {
+  /* max-width: 500px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  word-wrap: break-word;
+}
+
+/* #chatHistory p span {
+    max-width: 500px;
+} */
