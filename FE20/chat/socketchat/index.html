@@ -982,7 +982,9 @@
     }
 
     function youtube(str) {
+      // while(true){
       let array = [];
+      // for(let i =1; i<3;i++){
       array = str.match(
         /http(?:s?):\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?‌​[\w\?‌​=]*)?/);
       if (array) {
@@ -992,22 +994,36 @@
         console.log(array);
         return hist.appendChild(p);
       }
+      else{
+        return str;
+      }
+      // if(!array){break;}
+      // }
+      // }
     }
 
     function images(str) {
+      // while(true){
       let array = [];
       array = str.match(/http(?:s?):\/\/(.*)(gif|jpe?g|bmp|png)$/igm);
       // let img = document.createElement("img");
       if (array) {
+        for(let i = 0; i<array.length; i++){
         let a = document.createElement("a");
         // img.setAttribute("style","width: 200px; height: 200px");
         // img.setAttribute("src",`${array[0]}`);
-        a.setAttribute("href", `${array[0]}`);
+        a.setAttribute("href", `${array[i]}`);
         a.setAttribute("target", "_blank");
-        a.innerHTML = `<img style="width: 200px; height: 200px; padding-left: 20px;" src="${array[0]}" />`;
+        a.innerHTML = `<img style="width: 200px; height: 200px; padding-left: 20px;" src="${array[i]}" />`;
         console.log(array);
-        return hist.appendChild(a);
+        hist.appendChild(a);
+        }
+        return str;
       }
+      else{
+        return str;
+      }
+      // }
     }
 
     socket.on("msg", (msg) => {

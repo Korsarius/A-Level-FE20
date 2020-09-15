@@ -1,0 +1,55 @@
+body {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+b {
+    color: red;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-bottom: 5px;
+}
+
+span {
+    color: yellow;
+}
+
+i {
+    margin-left: 50px;
+}
+
+#chat {
+    display: flex;
+}
+
+.btn {
+    margin-bottom: 0;
+}
+
+.btn:hover~#emojiList {
+    display: block;
+}
+
+#emojiList:hover {
+    display: block;
+}
+
+#emojiList {
+    background-color: white;
+    display: none;
+}
+
+#msgOnServer {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    z-index: 1;
+}

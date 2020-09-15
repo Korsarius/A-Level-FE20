@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <select name="" id="countries"> </select>
+    <select name="" id="cities"> </select>
+
+    <script type="text/javascript">
+      // СДЕЛАТЬ ДОМА ДВА РАБОЧИХ СЕЛЕКТА (со странами и городами) 5 циклов, 2 вида работы с объектами
+      fetch(
+        "https://raw.githubusercontent.com/russ666/all-countries-and-cities-json/master/countries.json"
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          let countries = document.getElementById("countries");
+          let cities = document.getElementById("cities");
+          for (let key in data) {
+            let option = document.createElement("option");
+            option.innerText = key;
+            countries.appendChild(option);
+          }
+
+          // Первая страна Afghanistan, по-умолчанию вставка её городов во второй select
+          for (let i of data["Afghanistan"]) {
+            let option = document.createElement("option");
+            option.innerText = i;
+            cities.appendChild(option);
+          }
+
+          // при изменении select стран, меняется второй select (список всех городов из выбранной страны)
+          countries.addEventListener("change", function () {
+            // перед добавлением новых городов, удаление старых
+            while (cities.firstChild) {
+              cities.removeChild(cities.firstChild);
+            }
+
+            let country = document.getElementById("countries");
+            let value = country.value;
+            console.log(value); // вывод в консоль выбранной страны
+            for (let key in data) {
+              //   console.log(key); // вывод всех стран в консоль
+              for (let i of data[key]) {
+                if (key == value) {
+                  console.log(i); // вывод городов выбранной страны (в первом select) в консоль
+                  let option = document.createElement("option");
+                  option.innerText = i;
+                  cities.appendChild(option);
+                }
+              }
+            }
+          });
+        });
+    </script>
+  </body>
+</html>
